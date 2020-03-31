@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ATM Consultoria</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">ATM Consultoria</string>
+    <string name="nav_header_subtitle">atendimento@atmconsultoria.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_principal">Principal</string>
+    <string name="menu_servicos">Serviços</string>
+    <string name="menu_clientes">Clientes</string>
+    <string name="menu_contato">Contato</string>
+    <string name="menu_sobre">Sobre</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="titulo_1_servicos_fragment">Sistema de Gestão de Qualidade</string>
+    <string name="texto_servicos_fragment">Lorem Ipsum is simply dummy text of
+        the printing and typesetting industry. Lorem Ipsum has been the
+        industrys standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to
+        make a type specimen book. It has survived not only five centuries,
+        but also the leap into electronic typesetting, remaining essentially unchanged.
+        It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages.</string>
+    <string name="titulo_2_servicos_fragment">Indicadores de Desempenho</string>
+    <string name="clientes_fragment">Clientes</string>
+    <string name="texto_clientes_fragment">Em mais de 15 anos de existência, a ATM Consultoria
+    acumula experiência em serviços de consultoria para empresas nacionais e multinacionais
+    de diversos portes, tendo atendido mais de 1000 empresas desde sua abertura.</string>
+    <string name="contato_fragment">Contato fragment</string>
+    <string name="sobre_fragment">Sobre fragment</string>
+
+</resources>
