@@ -1,0 +1,2 @@
+rootProject.name='Organizze'
+include ':app'

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_inicio"
+        android:icon="@drawable/bottom_navigation_inicio_24dp"
+        android:title="@string/title_inicio" />
+
+    <item
+        android:id="@+id/navigation_lancamento"
+        android:icon="@drawable/bottom_navigation_lancamentos_24dp"
+        android:title="@string/title_lancamento" />
+
+    <item
+        android:id="@+id/navigation_adicionar_despesa"
+        android:icon="@drawable/bottom_navigation_adicionar_24dp"
+        android:title="@string/title_adicionar_despesa" />
+
+    <item
+        android:id="@+id/navigation_relatorio"
+        android:icon="@drawable/bottom_navigation_relatorios_24dp"
+        android:title="@string/title_relatorio" />
+
+    <item
+        android:id="@+id/navigation_meta"
+        android:icon="@drawable/bottom_navigation_meta_24dp"
+        android:title="@string/title_meta" />
+
+</menu>
