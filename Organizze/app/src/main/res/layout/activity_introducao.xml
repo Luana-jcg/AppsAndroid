@@ -84,7 +84,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:background="@drawable/botao_voltar"
+        android:background="@drawable/background_botao_voltar"
         android:drawableLeft="@drawable/ic_email_branco_24dp"
         android:padding="15dp"
         android:text="     Criar com E-mail"

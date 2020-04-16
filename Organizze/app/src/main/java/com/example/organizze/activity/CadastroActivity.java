@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.example.organizze.R;
 import com.example.organizze.config.ConfiguracaoFirebase;
 import com.example.organizze.config.StatusBarColor;
+import com.example.organizze.helper.Base64Custom;
 import com.example.organizze.model.Usuario;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -153,6 +154,9 @@ public class CadastroActivity extends AppCompatActivity implements View.OnClickL
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
+                    String idUsuario = Base64Custom.codificarBase64(usuario.getEmail());
+                    usuario.setId(idUsuario);
+                    usuario.salvar();
                     startActivity(new Intent(CadastroActivity.this,
                             ConfirmacaoCadastroActivity.class));
                     finish();

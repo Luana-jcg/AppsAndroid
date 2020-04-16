@@ -8,4 +8,8 @@
     <color name="colorPrimaryVerde">#1BD273</color>
     <color name="colorPrimaryDarkVerde">#1BD273</color>
     <color name="colorAccentBranco">#FFFFFF</color>
+
+    <color name="colorDespesa">#FF706A</color>
+
+    <color name="colorTransferencia">@color/colorCinza</color>
 </resources>

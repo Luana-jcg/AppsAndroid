@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ReceitaFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cabecalhoReceita"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#1BD273"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextValorReceita"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_adicionar_branco_50dp"
+            android:ellipsize="end"
+            android:ems="10"
+            android:gravity="right|center_vertical"
+            android:hint="R$ 0.00"
+            android:inputType="numberDecimal"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollViewReceita"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cabecalhoReceita">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:foregroundGravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cabecalhoReceita">
+
+            <TextView
+                android:id="@+id/textViewDescricaoReceita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Descrição"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextDescricaoReceita"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="Adicione a descrição"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDescricaoReceita"
+                android:drawableLeft="@drawable/ic_lapis_preto_24dp" />
+
+            <View
+                android:id="@+id/view1DescricaoReceita"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorCinza"
+                android:focusable="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextDescricaoReceita" />
+
+            <TextView
+                android:id="@+id/textViewCategoriaReceita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Categoria"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view1DescricaoReceita" />
+
+            <Spinner
+                android:id="@+id/arrayCategoriaReceita"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCategoriaReceita" />
+
+            <View
+                android:id="@+id/view2Receita"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorCinza"
+                android:focusable="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/arrayCategoriaReceita" />
+
+            <TextView
+                android:id="@+id/textViewPagarReceita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Conta"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2Receita" />
+
+            <Spinner
+                android:id="@+id/arrayContaReceita"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPagarReceita" />
+
+            <View
+                android:id="@+id/view3Receita"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorCinza"
+                android:focusable="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/arrayContaReceita" />
+
+            <TextView
+                android:id="@+id/textViewDataTituloReceita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Data"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view3Receita" />
+
+            <TextView
+                android:id="@+id/textViewDataReceita"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/ic_data_preto_24dp"
+                android:drawablePadding="15dp"
+                android:text="Selecione a data"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDataTituloReceita" />
+
+            <View
+                android:id="@+id/view4Receita"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorCinza"
+                android:focusable="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDataReceita" />
+
+            <TextView
+                android:id="@+id/textViewLancamentoReceita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Repetir lançamento"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view4Receita" />
+
+            <Button
+                android:id="@+id/botaoFixoReceita"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/background_botoes_lancamento"
+                android:text="Fixo"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLancamentoReceita" />
+
+            <Button
+                android:id="@+id/botaoParceladoReceita"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/background_botoes_lancamento"
+                android:text="Parcelado"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toEndOf="@+id/botaoFixoReceita"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLancamentoReceita" />
+
+            <View
+                android:id="@+id/view5Receita"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorCinza"
+                android:focusable="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/botaoFixoReceita" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/botaoConfirmarReceita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:backgroundTint="#1BD273"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollViewReceita"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cabecalhoReceita"
+        app:layout_constraintVertical_bias="0.95"
+        app:srcCompat="@drawable/ic_confirmar_branco_24dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

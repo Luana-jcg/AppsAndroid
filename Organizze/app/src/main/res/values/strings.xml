@@ -7,6 +7,16 @@
     <string name="title_inicio">Início</string>
     <string name="title_activity_principal">PrincipalActivity</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="array_categoria">
+        <item>Alimentação</item>
+        <item>Assinaturas e serviços</item>
+        <item>Bares e restaurantes</item>
+        <item>Casa</item>
+        <item>Compras</item>
+    </string-array>
+
+    <string-array name="array_pagamento">
+        <item>Conta Inicial</item>
+    </string-array>
+
 </resources>

@@ -1,10 +1,11 @@
 package com.example.organizze.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.organizze.R;
-import com.example.organizze.activity.ui.adicionar_despesas.AdicionarDespesasFragment;
+import com.example.organizze.activity.ui.adicionar_despesas.AdicionarDespesasActivity;
 import com.example.organizze.activity.ui.inicio.InicioFragment;
 import com.example.organizze.activity.ui.lancamentos.LancamentosFragment;
 import com.example.organizze.activity.ui.metas.MetasFragment;
@@ -15,10 +16,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 public class PrincipalActivity extends AppCompatActivity
     implements BottomNavigationView.OnNavigationItemSelectedListener {
@@ -60,7 +57,7 @@ public class PrincipalActivity extends AppCompatActivity
                 fragment = new LancamentosFragment();
                 break;
             case R.id.navigation_adicionar_despesa:
-                fragment = new AdicionarDespesasFragment();
+                startActivity(new Intent(PrincipalActivity.this, AdicionarDespesasActivity.class));
                 break;
             case R.id.navigation_relatorio:
                 fragment = new RelatoriosFragment();

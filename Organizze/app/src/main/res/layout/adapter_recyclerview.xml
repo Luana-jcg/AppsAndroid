@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/backgroud_img_list"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/background_list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroud_img_list"
+        app:layout_constraintEnd_toEndOf="@+id/backgroud_img_list"
+        app:layout_constraintStart_toStartOf="@+id/backgroud_img_list"
+        app:layout_constraintTop_toTopOf="@+id/backgroud_img_list"
+        app:srcCompat="@drawable/bottom_navigation_relatorios_24dp" />
+
+    <TextView
+        android:id="@+id/titulo_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Outros"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/subtitulo_list"
+        app:layout_constraintStart_toEndOf="@+id/backgroud_img_list"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/subtitulo_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backgroud_img_list"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_list" />
+
+    <TextView
+        android:id="@+id/valor_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="0,00"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/status_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/status_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pago"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valor_list" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
